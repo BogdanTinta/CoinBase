@@ -19,8 +19,8 @@ const OnboardingScreen = () => {
         <View style={onboardingStyle.container}>
             <Onboarding
                 bottomBarColor={colors.appBackground}
-                onSkip={() => navigation.navigate('Navigation')}
-                onDone={() => navigation.navigate('Navigation')}
+                onSkip={() => navigation.navigate('Login')}
+                onDone={() => navigation.navigate('Login')}
                 pages={[
                     {
                         backgroundColor: colors.appBackground,

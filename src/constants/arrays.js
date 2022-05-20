@@ -2,6 +2,8 @@ import React from 'react'
 import { Image } from 'react-native'
 import { loginStyle } from '../screens/Authentication/Login/styles'
 
+import { colors } from './colors'
+
 export const textInputs = [
     {
         placeholder: 'Name',
@@ -116,6 +118,72 @@ export const dropdowns = [
         placeholder: 'Card value',
         data: ['Emotional', 'Material'],
     }
+]
+
+export const bubbles = [
+    {
+        icon: require('../../assets/icons/bubble_icons/successful.png'),
+        text: 'Successful',
+        value: 8,
+        iconSize: {
+            height: 14,
+            width: 20,
+        }
+    },
+    {
+        icon: require('../../assets/icons/bubble_icons/pending.png'),
+        text: 'Pending',
+        value: 2,
+        iconSize: {
+            height: 5,
+            width: 21,
+        }
+    },
+    {
+        icon: require('../../assets/icons/bubble_icons/failed.png'),
+        text: 'Failed',
+        value: 3,
+        iconSize: {
+            height: 12,
+            width: 12,
+        }
+    }
+]
+
+export const transactionHistory = [
+    {
+        gradient: [colors.orangeGradient1, colors.orangeGradient2],
+        type: 'Amazon Card',
+        status: ['Successful', colors.green],
+        amount: '50,000.00',
+        date: 'Mar 01, 2022',
+        id: '#198719867'
+    },
+    {
+        gradient: [colors.gradient1, colors.gradient2],
+        type: 'Steam Card',
+        status: ['Failed', colors.red],
+        amount: '15,000.00',
+        date: 'Mar 23, 2022',
+        id: '#68769109'
+    },
+    {
+        gradient: [colors.blueGradient1, colors.blueGradient2],
+        type: 'iTunes Store Card',
+        status: ['Pending', colors.neutral],
+        amount: '9,000.00',
+        date: 'May 20, 2022',
+        id: '#89687561'
+    },
+    {
+        gradient: [colors.orangeGradient1, colors.orangeGradient2],
+        type: 'BitCoin Trade',
+        status: ['Successful', colors.green],
+        amount: '58,000.00',
+        date: 'May 20, 2022',
+        id: '#19871912314'
+    }
+
 ]
 
 // FOR ONBOARDING PAGES

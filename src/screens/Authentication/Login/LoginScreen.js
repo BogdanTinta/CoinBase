@@ -50,7 +50,7 @@ const LoginScreen = () => {
                 <Text style={loginStyle.passwordText}>Forgot your password?</Text>
             </TouchableOpacity>
 
-            <GradientButton buttonText={'LOGIN'} destination={'Onboarding'} />
+            <GradientButton buttonText={'LOGIN'} destination={'Navigation'} />
 
             <SocialAccounts text={'Login'} />
 
