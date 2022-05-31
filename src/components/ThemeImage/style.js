@@ -8,7 +8,7 @@ export const themeStyle = StyleSheet.create({
         marginBottom: metrics.size20,
     },
     image: {
-        height: 140,
+        height: metrics.size140,
         width: metrics.size200,
         marginBottom: metrics.size20,
         alignSelf: 'center',

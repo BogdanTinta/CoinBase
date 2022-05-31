@@ -11,7 +11,7 @@ const SplashScreen = () => {
     const navigation = useNavigation()
 
     setTimeout(() => {
-        navigation.navigate('Login')
+        navigation.navigate('Onboarding')
     }, 2000)
 
 

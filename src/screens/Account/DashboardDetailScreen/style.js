@@ -61,7 +61,5 @@ export const detailStyle = StyleSheet.create({
         fontSize: 14,
         textAlign: 'left',
     },
-    dropdownList: {
 
-    }
 })

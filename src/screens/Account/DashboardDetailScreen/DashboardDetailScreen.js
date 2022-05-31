@@ -5,6 +5,7 @@ import SelectDropdown from 'react-native-select-dropdown'
 
 import MyTextInput from '../../../components/MyTextInput/MyTextInput'
 import GradientButton from '../../../components/GradientButton/GradientButton'
+import ValueBox from '../../../components/ValueBox/ValueBox'
 
 import { detailStyle } from './style'
 import { dropdowns } from '../../../constants/arrays'
@@ -24,12 +25,9 @@ const cardCase = (cardName, conversionRate, detailStyle) => {
 
                     <MyTextInput placeholder={`${cardName} value`} />
 
-                    <Image
-                        source={require('../../../../assets/icons/rectangle.png')}
-                        style={detailStyle.rectangle}
-                    />
+                    <ValueBox value={'N 0,000.00'} />
 
-                    <GradientButton buttonText={'CONTINUE'} />
+                    <GradientButton buttonText={'CONTINUE'} destination={'Dashboard'} />
                 </>
             )
             break;
@@ -52,7 +50,6 @@ const cardCase = (cardName, conversionRate, detailStyle) => {
                                 buttonStyle={detailStyle.dropdownArea}
                                 defaultButtonText={item.placeholder}
                                 buttonTextStyle={detailStyle.dropdownText}
-                                dropdownStyle={detailStyle.dropdownList}
                                 renderDropdownIcon={() => {
                                     return <Image source={require('../../../../assets/icons/dropdown_arrow.png')} />
                                 }}
@@ -60,12 +57,9 @@ const cardCase = (cardName, conversionRate, detailStyle) => {
                         )
                     })}
 
-                    <Image
-                        source={require('../../../../assets/icons/rectangle.png')}
-                        style={detailStyle.rectangle}
-                    />
+                    <ValueBox value={'N 0,000.00'} />
 
-                    <GradientButton buttonText={'CONTINUE'} />
+                    <GradientButton buttonText={'CONTINUE'} destination={'Dashboard'} />
                 </>
             )
 
@@ -88,7 +82,6 @@ const cardCase = (cardName, conversionRate, detailStyle) => {
                                 buttonStyle={detailStyle.dropdownArea}
                                 defaultButtonText={item.placeholder}
                                 buttonTextStyle={detailStyle.dropdownText}
-                                dropdownStyle={detailStyle.dropdownList}
                                 renderDropdownIcon={() => {
                                     return <Image source={require('../../../../assets/icons/dropdown_arrow.png')} />
                                 }}
@@ -96,12 +89,9 @@ const cardCase = (cardName, conversionRate, detailStyle) => {
                         )
                     })}
 
-                    <Image
-                        source={require('../../../../assets/icons/rectangle.png')}
-                        style={detailStyle.rectangle}
-                    />
+                    <ValueBox value={'N 0,000.00'} />
 
-                    <GradientButton buttonText={'CONTINUE'} />
+                    <GradientButton buttonText={'CONTINUE'} destination={'Dashboard'} />
                 </>
             )
             break;
